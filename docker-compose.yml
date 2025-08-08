@@ -1,11 +1,9 @@
 services:
   wordpress-dev:
     build: .
-    container_name: wordpress-dev-server
+    container_name: wordpress
     ports:
       - "8080:80"
-    volumes:
-      - ./wordpress-data:/var/www/html
     environment:
       - WORDPRESS_DB_HOST=localhost
       - WORDPRESS_DB_USER=wordpress

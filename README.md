@@ -45,18 +45,23 @@ A complete WordPress development environment running in a single Docker containe
 
 ## Quick Start
 
-1. **Build and start the container:**
+1. **Build the container:**
+   ```bash
+   docker-compose build
+   ```
+
+2. **Start the container:**
    ```bash
    docker-compose up -d
    ```
 
-2. **Access WordPress:**
+3. **Access WordPress:**
    - Open your browser and go to `http://localhost:8080`
    - Login with:
      - Username: `admin`
      - Password: `admin123`
 
-3. **Stop the container:**
+4. **Stop the container:**
    ```bash
    docker-compose down
    ```
