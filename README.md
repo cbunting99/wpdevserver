@@ -15,11 +15,16 @@ Features:
 
 Author: Chris Bunting
 Created: 2025-08-07
-Last Modified: 2025-08-07
+Last Modified: 2025-08-08
 Version: 1.0.0
 
 Copyright (c) 2025 Chris Bunting. All rights reserved.
 -->
+
+# ⚠️ LOCAL DEVELOPMENT ONLY
+
+**This project was created by Chris Bunting for local development purposes only.**  
+**⚠️ Security Notice: Default passwords are used during automated setup. Do not deploy to production or expose to the internet.**
 
 # WordPress Development Server
 
@@ -131,3 +136,10 @@ This setup is designed for development purposes only. It is not suitable for pro
 - No security hardening
 
 For production deployments, consider using separate containers for each service.
+
+---
+
+## Made with ❤️ by Chris Bunting
+
+This project was created with care by Chris Bunting for local WordPress development.  
+For questions or contributions, please visit the [GitHub repository](https://github.com/cbunting99/wpdevserver).
