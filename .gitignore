@@ -1,0 +1,118 @@
+# WordPress .gitignore
+# This file excludes WordPress core files and other items that should not be tracked
+
+# WordPress core files - these should be managed separately
+wordpress-data/
+!wordpress-data/wp-content/
+!wordpress-data/wp-content/themes/
+!wordpress-data/wp-content/plugins/
+!wordpress-data/wp-config.php
+!wordpress-data/.htaccess
+
+# WordPress upload directory - contains user-generated content
+wordpress-data/wp-content/uploads/
+
+# WordPress cache and temporary files
+wordpress-data/wp-content/cache/
+wordpress-data/wp-content/upgrade/
+wordpress-data/wp-content/upgrade-temp-backup/
+wordpress-data/wp-content/backups/
+
+# WordPress configuration files with sensitive data
+wordpress-data/wp-config.php
+wordpress-data/.htaccess
+
+# Log files
+*.log
+logs/
+
+# Database files
+*.sql
+*.sql.gz
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Vim swap files
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/settings.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Docker files
+docker-compose.override.yml
+.env
+
+# Temporary files
+tmp/
+temp/
+
+# Node.js files (if using npm for any frontend tooling)
+node_modules/
+npm-debug.log*
+
+# Composer files (if using PHP dependencies)
+vendor/
+composer.lock
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# SASS/SCSS cache
+.sass-cache/
+
+# Compiled files
+*.min.css
+*.min.js
+
+# Docker build context
+**/.dockerignore
+
+# Custom theme development files that might be generated
+custom-theme/wpdevserver/**/*.css.map
+custom-theme/wpdevserver/**/*.js.map
+
+# WordPress specific
+wordpress-data/wp-content/themes/*/node_modules/
+wordpress-data/wp-content/themes/*/bower_components/
+wordpress-data/wp-content/plugins/*/node_modules/
+wordpress-data/wp-content/plugins/*/bower_components/
+
+# Local configuration files
+local-config.php
+local-config-db.php
+
+# WordPress development environment specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
